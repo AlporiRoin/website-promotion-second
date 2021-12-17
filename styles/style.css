@@ -1,0 +1,4564 @@
+@import url(./Fonts.mixin.css);
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+}
+
+@media screen and ( min-width: 1024px ) {
+    
+    header {
+
+        width: 100%;
+        height: 1080px;
+
+        border: 1px solid transparent;
+
+        background: url('../static/picture/header_background.png');
+        background-size: cover;
+        background-position: 50% 50%;
+
+    }
+
+    .container {
+
+        width: 1110px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .flex {
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        justify-content: space-between;
+
+    }
+
+    .flex__unique {
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        justify-content: space-between;
+
+    }
+
+    .header__title {
+
+        display: table;
+
+        width: 70%;
+        height: 380px;
+
+        margin-top: 200px;
+
+    }
+
+    .header__title h3 {
+
+        display: table-cell;
+	    vertical-align: middle;
+
+        height: 100%;
+
+        font-size: 48px;
+        font-family: "MontserratAlternates-Black";
+        font-style: normal;
+        font-weight: 900;
+
+        background: linear-gradient(#9E00FF -15%, #FFFFFF, #FFFFFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+
+    .order_button_wrapper {
+
+        width: 100%;
+
+    }
+
+    .header__button {
+
+        position: relative;
+        
+        width: 430px;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:75px;width:425px" rx="10" ry="10" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: top, box-shadow;
+        transition-duration: .1s;
+
+    }
+
+    .header__button:hover {
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+        top: 5px;
+        
+
+    }
+
+    .header__button h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+
+    section {
+
+        width: 100%;
+
+    }
+
+    .required__resources {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 94px;
+        padding-bottom: 105px;
+
+    }
+
+    .reused__header {
+
+        position: relative;
+
+        width: 100%;
+        height: 65px;
+
+    }
+
+    .indoor__unit {
+
+        position: relative;
+
+        width: 90%;
+        height: 100%;
+
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .reused__header p {
+
+        position: relative;
+
+        display: inline-block;
+
+        word-break: break-word;
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-Black";
+        font-style: normal;
+
+        color: #000000;
+
+        line-height: 50px;
+
+    }
+
+    .reused__header span {
+
+        position: relative;
+
+    }
+
+    .reused__header span::after {
+
+        position: absolute;
+
+        content: '';
+
+        top: 50px;
+        left: 2px;
+
+        width: 60px;
+        height: 5px;
+
+        background-color: #6C16A1;
+
+    }
+
+    .reused__header:last-child span {
+
+        position: relative;
+
+    }
+
+    .reused__header:last-child span::after {
+
+        position: absolute;
+
+        content: '';
+
+        top: 50px;
+        left: -10px;
+
+        width: 100px;
+        height: 5px;
+
+        background-color: #6C16A1;
+
+    }
+
+    .first__paragraph {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 38px;
+
+        text-align: center;
+
+    }
+
+    .first__paragraph h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Light";
+        font-weight: lighter;
+        font-style: normal;
+
+        line-height: 60px;
+        letter-spacing: 0.04em;
+
+        color: #000000;
+
+    }
+
+    .first__paragraph h5 span {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 300;
+        font-style: normal;
+
+        color: #000000;
+
+    }
+
+    .second__paragraph {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 30px;
+
+        text-align: center;
+
+    }
+
+    .second__paragraph h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Light";
+        font-weight: lighter;
+        font-style: normal;
+
+        line-height: 60px;
+
+        letter-spacing: 0.04em;
+
+        color: #000000;
+
+    }
+
+    .second__paragraph h5 span {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 300;
+        font-style: normal;
+
+        color: #000000;
+
+    }
+
+    .benefit__buyer {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .upper__subblock {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-bottom: 50px;
+
+    }
+
+    .lower__subblock {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 115px;
+        padding-bottom: 80px;
+
+        background: linear-gradient(180deg, #33164E 0%, #561A8D 100%);
+
+    }
+
+    .array__element {
+
+        position: relative;
+
+        flex-basis: calc(1/4*100% - (1 - 1/4)*0px);
+        flex-shrink: 1;
+
+    }
+
+    .image__element {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-bottom: 30px;
+
+    }
+
+    .image__element img {
+
+        position: relative;
+
+        display: block;
+
+        width: 120px;
+        height: 120px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .element__text {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        text-align: center;
+
+        padding-left: 10%;
+        padding-right: 10%;
+
+    }
+
+    .element__text h5 {
+
+        position: relative;
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 30px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .test__purchase {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 105px;
+        padding-bottom: 100px;
+
+    }
+
+    .reused__subtitle {
+
+        position: relative;
+
+        width: 96%;
+
+        text-align: center;
+
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .reused__subtitle h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Light";
+        font-weight: lighter;
+        font-style: normal;
+
+        color: #000000;
+
+        line-height: 40px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .test_purchase_dies {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 86px;
+
+    }
+
+    .test_purchase_bar {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        flex-basis: calc(1/2*100% - (1 - 1/2)*60px);
+        flex-shrink: 1;
+
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+
+        padding-top: 68px;
+        padding-bottom: 80px;
+
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .test_purchase_bar:first-child {
+
+        
+    }
+
+    .test__price {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+    .test__price h1 {
+
+        font-size: 64px;
+        font-family: "MontserratAlternates-Black";
+        font-weight: 900;
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 50%, #F7E6BD 80% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .text_under_price {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        margin-top: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 42px;
+
+    }
+
+    .text_under_price h3 {
+
+        font-size: 28px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #555555;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .button_ordering_die {
+
+        width: 100%;
+
+    }
+
+    .frame_enclosing_button {
+
+        position: relative;
+        
+        width: 80%;
+        height: 100px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="300" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.05"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:94px;width:calc( 100% - 10px )" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .active_frame_enclosing_button {
+
+        position: relative;
+
+        box-sizing: border-box;
+        
+        width: 80%;
+        height: 100px;
+
+        z-index: 0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="300" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.05"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:94px;width:calc( 100% - 10px)" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .active_order_button_block {
+
+        position: relative;
+
+        top: 5px;
+        left: 5px;
+
+        width: calc( 100% - 14px );
+        height: calc( 100% - 10px );
+
+        border-radius: 10px;
+
+        background: linear-gradient( 90deg, #9E00FF, #F26EFF, #FDFF8B );
+
+    }
+
+    /* .order_button_block {
+
+        position: relative;
+        
+        width: 85%;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23F5F88C" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:74px;width:calc( 100% - 6px )" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    } */
+
+    .order_button_block:hover {
+
+        margin-top: 5px;
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+
+    }
+
+    .order_button_block__h3 {
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .button_ordering_die__unique {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 48px;
+
+    }
+
+    .order_button_block__unique {
+
+        position: relative;
+        
+        width: 85%;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="200" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.4"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23F5F88C" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:74px;width:calc( 100% - 6px )" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .order_button_block__unique:hover {
+
+        margin-top: 5px;
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+
+    }
+
+    .order_button_block__unique h3 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .active_button_block {
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        line-height: 2.8;
+
+        color: #1B1044;
+
+    }
+
+    .ordering_links {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 70px;
+        margin-bottom: 100px;
+        
+    }
+
+    .link_purchase_dies {
+
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        margin-top: 70px;
+
+    }
+
+    .link_purchase_bar {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 90%;
+
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+
+        padding-top: 33px;
+        padding-bottom: 100px;
+
+        margin-top: 58px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .link_purchase_bar:first-child {
+        
+    }
+
+    .link__price {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+    .link__price h1 {
+
+        font-size: 48px;
+        font-family: "MontserratAlternates-Black";
+        font-weight: 900;
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 50%, #F7E6BD 80% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    footer {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 70px;
+
+    }
+
+    .top_part_faq {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-bottom: 80px;
+
+    }
+
+    .lower_part_faq {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        background: linear-gradient(180deg, #33164E 0%, #561A8D 100%);
+
+        padding-top: 30px;
+        padding-bottom: 100px;
+
+    }
+
+    .list__questions {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-bottom: 100px;
+
+    }
+
+    .question {
+
+        position: relative;
+
+        width: 100%;
+        height: 76px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .question h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .underscore__question {
+
+        position: absolute;
+
+        left: 0;
+        bottom: 0;
+
+        width: 90px;
+        height: 3px;
+
+        background: #CE2CF5;
+
+    }
+
+    .support {
+
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        margin-top: 35px;
+
+    }
+
+    .support__header {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        line-height: 50px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .support__header h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-ExtraBold";
+        font-weight: 800;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+    }
+
+    .list__links {
+
+        position: relative;
+
+        display: flex;
+
+        width: 35%;
+
+        justify-content: space-between;
+
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 160px;
+        
+    }
+
+    .link__block {
+
+        position: relative;
+
+        text-decoration: none;
+
+    }
+
+    .link__block img {
+
+        width: 49px;
+        height: 49px;
+
+    }
+
+    .link__block:first-child img {
+
+        width: 41px;
+        height: 40px;
+
+    }
+
+    .link__block h5 {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #E1E1E1;
+
+        line-height: 2.5;
+        letter-spacing: 0.04em;
+        
+    }
+
+    .order__popup {
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100vw;
+        height: 100vh;
+
+        background: #FFFFFF;
+
+    }
+
+    .popup__table {
+
+        position: relative;
+
+        display: table-cell;
+
+        width: 100vw;
+        height: 100vh;
+
+        vertical-align: middle;
+
+    }
+
+    .order_popup_content {
+
+        box-sizing: border-box;
+
+        position: relative;
+
+        width: 100vw;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-top: 100px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 100px;
+
+        background: linear-gradient(180deg, #4A1977 0%, #7527BD 100%);
+
+    }
+
+    .type_of_order {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .type_of_order h1 {
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .cost__block {
+
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+
+        margin-top: 12px;
+
+    }
+
+    .cost__block h2 {
+
+        font-size: 28px;
+        font-family: "MontserratAlternates-Regular";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .cost__block h1 {
+
+        position: relative;
+
+        font-size: 48px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 25%, #F7E6BD 55% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+        margin-top: 17px;
+        margin-left: 25px;
+
+    }
+
+    .dividing__line {
+
+        position: relative;
+
+        width: 190px;
+        height: 3px;
+
+        margin-top: 25px;
+
+        background: #CE2CF5;
+
+    }
+
+    .user__data {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 35px;
+
+    }
+
+    .user__data label {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .user__data input {
+
+        position: relative;
+
+        display: block;
+
+        width: 570px;
+        height: 60px;
+
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+        background: rgba(0, 0, 0, 0);
+
+        border: 3px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        padding-left: 25px;
+
+        border: 3px solid #FFFFFF;
+
+    }
+
+    .user__data input:placeholder-shown {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Regular";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+    }
+    
+    .continue_button_block {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 80px;
+
+    }
+
+    .continue__button {
+
+        position: relative;
+        
+        width: 430px;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:75px;width:425px" rx="10" ry="10" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: top, box-shadow;
+        transition-duration: .1s;
+
+    }
+
+    .continue__button:hover {
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+        top: 5px;
+        
+
+    }
+
+    .continue__button h3 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Bold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .payment_method_popup {
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100vw;
+        height: 100vh;
+
+        background: #FFFFFF;
+
+    }
+
+    .popup__name {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .popup__name h1 {
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .account__name {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .account__name h5 {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: lighter;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .sum__block {
+
+        position: relative;
+
+        display: flex;
+
+        margin-top: -25px;
+
+    }
+
+    .sum__block h4 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Medium";
+        font-weight: lighter;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+        
+    }
+
+    .sum__block h1 {
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 25%, #F7E6BD 55% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .form_payment_method {
+
+        width: 100%;
+
+        margin-top: 45px;
+
+    }
+
+    .form_payment_method label {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .payment_method_field {
+
+        position: relative;
+
+        display: block;
+
+        width: 570px;
+        height: 60px;
+
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+        background: rgba(0, 0, 0, 0);
+
+        border: 3px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        padding-left: 25px;
+
+        border: 3px solid #FFFFFF;
+
+    }
+
+    .payment_button_backing {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 40px;
+
+    }
+
+    .payment__button {
+
+        position: relative;
+        
+        width: 430px;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:75px;width:425px" rx="10" ry="10" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: top, box-shadow;
+        transition-duration: .1s;
+
+    }
+
+    .payment__button:hover {
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+        top: 5px;
+        
+
+    }
+
+    .payment__button h3 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Bold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.3;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .first_decorative_triangle {
+
+        position: absolute;
+
+        top: 288px;
+        left: 574px;
+
+    }
+
+    .second_decorative_triangle {
+
+        position: absolute;
+
+        top: 496px;
+        left: 1370px;
+
+    }
+
+    .third_decorative_triangle {
+
+        position: absolute;
+
+        top: 330px;
+        left: 1564px;
+
+        transform: rotate(-44deg);
+
+    }
+
+    .fourth_decorative_triangle {
+
+        position: absolute;
+
+        top: 745px;
+        left: 250px;
+
+        transform: rotate(-44deg);
+
+    }
+
+    .fifth_decorative_triangle {
+
+        position: absolute;
+
+        top: 200px;
+        right: 286px;
+
+    }
+
+    .sixth_decorative_triangle {
+
+        position: absolute;
+
+        top: 855px;
+        left: 288px;
+
+        transform: rotate(-90deg);
+
+    }
+
+    .seventh_decorative_triangle {
+
+        position: absolute;
+
+        top: 400px;
+        right: 384px;
+
+    }
+
+    .eighth_decorative_triangle {
+
+        position: absolute;
+
+        top: 500px;
+        right: 340px;
+
+        transform: rotate(35deg);
+
+    }
+
+}
+
+@media screen and ( max-width: 1023px ) and ( min-width: 750px ) {
+
+    header {
+
+        width: 100%;
+        height: 1336px;
+
+        border: 1px solid transparent;
+
+        background: url('../static/picture/Substract.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .container {
+
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .flex {
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+
+    }
+
+    .header__title {
+
+        display: table;
+
+        width: 95%;
+        height: 380px;
+
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+
+    }
+
+    .header__title h3 {
+
+        font-size: 48px;
+        font-family: "MontserratAlternates-Black";
+        font-style: normal;
+        font-weight: 900;
+
+        background: linear-gradient(#9E00FF -15%, #FFFFFF, #FFFFFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+
+    .order_button_wrapper {
+
+        width: 100%;
+
+    }
+
+    .header__button {
+
+        position: relative;
+        
+        width: 540px;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:75px;width:534px" rx="10" ry="10" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: top, box-shadow;
+        transition-duration: .1s;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .header__button:hover {
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+        top: 5px;
+        
+
+    }
+
+    .header__button h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+
+    section {
+
+        width: 100%;
+
+    }
+
+    .required__resources {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 94px;
+        padding-bottom: 105px;
+
+    }
+
+    .reused__header {
+
+        position: relative;
+
+        width: 100%;
+        height: 65px;
+
+    }
+
+    .indoor__unit {
+
+        position: relative;
+
+        width: 90%;
+        height: 100%;
+
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .reused__header p {
+
+        position: relative;
+
+        display: inline-block;
+
+        word-break: break-word;
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-Black";
+        font-style: normal;
+
+        color: #000000;
+
+        line-height: 50px;
+
+    }
+
+    .reused__header span {
+
+        position: relative;
+
+    }
+
+    .reused__header span::after {
+
+        position: absolute;
+
+        content: '';
+
+        top: 50px;
+        left: 2px;
+
+        width: 60px;
+        height: 5px;
+
+        background-color: #6C16A1;
+
+    }
+
+    .reused__header:last-child span {
+
+        position: relative;
+
+    }
+
+    .reused__header:last-child span::after {
+
+        position: absolute;
+
+        content: '';
+
+        top: 50px;
+        left: -10px;
+
+        width: 100px;
+        height: 5px;
+
+        background-color: #6C16A1;
+
+    }
+
+    .first__paragraph {
+
+        position: relative;
+
+        width: 90%;
+
+        margin-top: 100px;
+
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .first__paragraph h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Light";
+        font-weight: lighter;
+        font-style: normal;
+
+        line-height: 60px;
+        letter-spacing: 0.04em;
+
+        color: #000000;
+
+    }
+
+    .first__paragraph h5 span {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 300;
+        font-style: normal;
+
+        color: #000000;
+
+    }
+
+    .second__paragraph {
+
+        position: relative;
+
+        width: 90%;
+
+        margin-top: 60px;
+
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .second__paragraph h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Light";
+        font-weight: lighter;
+        font-style: normal;
+
+        line-height: 60px;
+
+        letter-spacing: 0.04em;
+
+        color: #000000;
+
+    }
+
+    .second__paragraph h5 span {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 300;
+        font-style: normal;
+
+        color: #000000;
+
+    }
+
+    .benefit__buyer {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 30px;
+
+    }
+
+    .upper__subblock {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-bottom: 50px;
+
+    }
+
+    .lower__subblock {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 115px;
+        padding-bottom: 140px;
+
+        background: linear-gradient(180deg, #33164E 0%, #561A8D 100%);
+
+    }
+
+    .array__element {
+
+        position: relative;
+
+        flex-basis: calc(1/2*100% - (1 - 1/2)*0px);
+        flex-shrink: 0;
+
+        margin-top: 40px;
+
+    }
+
+    .image__element {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+
+    .image__element img {
+
+        position: relative;
+
+        display: block;
+
+        width: 120px;
+        height: 120px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .element__text {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        text-align: center;
+
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 10%;
+
+    }
+
+    .element__text h5 {
+
+        position: relative;
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 30px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .test__purchase {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 105px;
+        padding-bottom: 100px;
+
+    }
+
+    .reused__subtitle {
+
+        display: none;
+
+        position: relative;
+
+        width: 80%;
+
+        text-align: center;
+
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .reused__subtitle h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Light";
+        font-weight: lighter;
+        font-style: normal;
+
+        color: #000000;
+
+        line-height: 40px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .test_purchase_dies {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 86px;
+
+    }
+
+    .flex__unique {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    .test_purchase_bar {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 90%;
+
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+
+        padding-top: 68px;
+        padding-bottom: 80px;
+
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .test_purchase_bar:first-child {
+
+        margin-top: 0px;
+        
+    }
+
+    .test__price {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+    .test__price h1 {
+
+        font-size: 64px;
+        font-family: "MontserratAlternates-Black";
+        font-weight: 900;
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 50%, #F7E6BD 80% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .text_under_price {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        margin-top: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 42px;
+
+    }
+
+    .text_under_price h3 {
+
+        font-size: 28px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #555555;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .button_ordering_die {
+
+        width: 100%;
+
+    }
+
+    .frame_enclosing_button {
+
+        position: relative;
+        
+        width: 90%;
+        height: 100px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="300" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.05"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23F5F88C" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:94px;width:calc( 100% - 1%)" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .active_frame_enclosing_button {
+
+        position: relative;
+
+        box-sizing: border-box;
+        
+        width: 90%;
+        height: 100px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="300" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.05"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:94px;width:calc( 100% - 1% )" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .active_order_button_block {
+
+        position: relative;
+
+        top: 5px;
+        left: 5px;
+
+        width: calc( 100% - 10px );
+        height: calc( 100% - 10px );
+
+        border-radius: 10px;
+
+        background: linear-gradient( 90deg, #9E00FF, #F26EFF, #FDFF8B );
+
+    }
+
+    .order_button_block:hover {
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+
+    }
+
+    .order_button_block__h3 {
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .active_button_block {
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        line-height: 2.8;
+
+        color: #1B1044;
+
+    }
+
+    .button_ordering_die__unique {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 48px;
+
+    }
+
+    .order_button_block__unique {
+
+        position: relative;
+        
+        width: 104%;
+        height: 100px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="300" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23F5F88C" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:94px;width:calc( 100% - 1%)" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: -2%;
+        margin-right: auto;
+
+    }
+
+    .order_button_block__unique:hover {
+
+        margin-top: 5px;
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+
+    }
+
+    .order_button_block__unique h3 {
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .ordering_links {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 70px;
+        margin-bottom: 100px;
+        
+    }
+
+    .link_purchase_dies {
+
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        margin-top: 140px;
+
+    }
+
+    .link_purchase_bar {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 90%;
+
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+
+        padding-top: 33px;
+        padding-bottom: 100px;
+
+        margin-top: 58px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .link_purchase_bar:first-child {
+
+        margin-top: 0px;
+        
+    }
+
+    .link__price {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        margin-bottom: 40px;
+
+    }
+
+    .link__price h1 {
+
+        font-size: 48px;
+        font-family: "MontserratAlternates-Black";
+        font-weight: 900;
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 50%, #F7E6BD 80% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    footer {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 70px;
+
+    }
+
+    .top_part_faq {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-bottom: 80px;
+
+    }
+
+    .lower_part_faq {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        background: linear-gradient(180deg, #33164E 0%, #561A8D 100%);
+
+        padding-top: 30px;
+        padding-bottom: 100px;
+
+    }
+
+    .list__questions {
+
+        position: relative;
+
+        width: 98%;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+
+    }
+
+    .question {
+
+        position: relative;
+
+        width: 100%;
+        height: 76px;
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .question h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .underscore__question {
+
+        position: absolute;
+
+        left: 0;
+        bottom: 0;
+
+        width: 90px;
+        height: 3px;
+
+        background: #CE2CF5;
+
+    }
+
+    .support {
+
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        margin-top: 35px;
+
+    }
+
+    .support__header {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        line-height: 50px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .support__header h5 {
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-ExtraBold";
+        font-weight: 800;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+    }
+
+    .list__links {
+
+        position: relative;
+
+        display: flex;
+
+        width: 70%;
+
+        justify-content: space-between;
+
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        
+    }
+
+    .link__block {
+
+        position: relative;
+
+        text-decoration: none;
+
+    }
+
+    .link__block img {
+
+        width: 70px;
+        height: 70px;
+
+    }
+
+    .link__block h5 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #E1E1E1;
+
+        line-height: 2.5;
+        letter-spacing: 0.04em;
+        
+    }
+
+    .order__popup {
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100vw;
+        height: 100vh;
+
+        background: #FFFFFF;
+
+    }
+
+    .popup__table {
+
+        position: relative;
+
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    .order_popup_content {
+
+        box-sizing: border-box;
+
+        position: relative;
+
+        width: 100vw;
+        height: 100vh;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-top: 90px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 60px;
+
+    }
+
+    .type_of_order {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .type_of_order h1 {
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .cost__block {
+
+        position: relative;
+
+        display: flex;
+
+        width: 100%;
+
+        margin-top: 40px;
+
+    }
+
+    .cost__block h2 {
+
+        font-size: 28px;
+        font-family: "MontserratAlternates-Regular";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .cost__block h1 {
+
+        position: relative;
+
+        font-size: 48px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 25%, #F7E6BD 55% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+        margin-top: 17px;
+        margin-left: 25px;
+
+    }
+
+    .dividing__line {
+
+        position: relative;
+
+        width: 190px;
+        height: 3px;
+
+        margin-top: 50px;
+
+        background: #CE2CF5;
+
+    }
+
+    .user__data {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 70px;
+
+    }
+
+    .user__data label {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .user__data input {
+
+        position: relative;
+
+        display: block;
+
+        width: 570px;
+        height: 60px;
+
+        margin-top: 60px;
+        margin-bottom: 30px;
+
+        background: rgba(0, 0, 0, 0);
+
+        border: 3px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        padding-left: 25px;
+
+        border: 3px solid #FFFFFF;
+
+    }
+
+    .user__data input:placeholder-shown {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Regular";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+    }
+    
+    .continue_button_block {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 80px;
+
+    }
+
+    .continue__button {
+
+        position: relative;
+        
+        width: 430px;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:75px;width:425px" rx="10" ry="10" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: top, box-shadow;
+        transition-duration: .1s;
+
+    }
+
+    .continue__button:hover {
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+        top: 5px;
+        
+
+    }
+
+    .continue__button h3 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Bold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .payment_method_popup {
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100vw;
+        height: 100vh;
+
+        background: #FFFFFF;
+
+    }
+
+    .popup__name {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .popup__name h1 {
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .account__name {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .account__name h5 {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: lighter;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .sum__block {
+
+        position: relative;
+
+        display: flex;
+
+        margin-top: 0px;
+
+    }
+
+    .sum__block h4 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Medium";
+        font-weight: lighter;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+        
+    }
+
+    .sum__block h1 {
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 25%, #F7E6BD 55% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .form_payment_method {
+
+        width: 100%;
+
+        margin-top: 70px;
+
+    }
+
+    .form_payment_method label {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .payment_method_field {
+
+        position: relative;
+
+        display: block;
+
+        width: 570px;
+        height: 60px;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        background: rgba(0, 0, 0, 0);
+
+        border: 3px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        padding-left: 25px;
+
+        border: 3px solid #FFFFFF;
+
+    }
+
+    .payment_button_backing {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 40px;
+
+    }
+
+    .payment__button {
+
+        position: relative;
+        
+        width: 430px;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:75px;width:425px" rx="10" ry="10" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: top, box-shadow;
+        transition-duration: .1s;
+
+    }
+
+    .payment__button:hover {
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+        top: 5px;
+        
+
+    }
+
+    .payment__button h3 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Bold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.3;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .first_decorative_triangle {
+
+        position: absolute;
+
+        top: 188px;
+        left: 574px;
+
+    }
+
+    .second_decorative_triangle {
+
+        position: absolute;
+
+        top: 700px;
+        left: 30px;
+
+    }
+
+    .third_decorative_triangle {
+
+        position: absolute;
+
+        top: 200px;
+        left: 50px;
+
+        transform: rotate(-44deg);
+
+    }
+
+    .fourth_decorative_triangle {
+
+        position: absolute;
+
+        top: 1200px;
+        left: 250px;
+
+        transform: rotate(-44deg);
+
+    }
+
+    .fifth_decorative_triangle {
+
+        position: absolute;
+
+        top: 100px;
+        right: 50px;
+
+    }
+
+    .sixth_decorative_triangle {
+
+        position: absolute;
+
+        bottom: 420px;
+        left: 50px;
+
+        transform: rotate(-90deg);
+
+    }
+
+    .seventh_decorative_triangle {
+
+        position: absolute;
+
+        top: 510px;
+        right: 184px;
+
+    }
+
+    .eighth_decorative_triangle {
+
+        position: absolute;
+
+        top: 620px;
+        right: 140px;
+
+        transform: rotate(35deg);
+
+    }
+
+}
+
+@media screen and ( max-width: 749px ) and ( min-width: 320px ) {
+    
+    header {
+
+        width: 100%;
+        height: 600px;
+
+        border: 1px solid transparent;
+
+        background: url('../static/picture/Substract.png');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+
+    }
+
+    .container {
+
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .flex {
+
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+
+        justify-content: space-between;
+
+        flex-wrap: wrap;
+
+    }
+
+    .header__title {
+
+        display: table;
+
+        width: 100%;
+
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+
+    }
+
+    .header__title h3 {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Black";
+        font-style: normal;
+        font-weight: 900;
+
+        background: linear-gradient(#9E00FF 5%, #FFFFFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        line-height: 40px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+
+    .order_button_wrapper {
+
+        width: 100%;
+
+    }
+
+    .header__button {
+
+        position: relative;
+        
+        width: 90%;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:74px;width:calc( 100% - 1% )" rx="10" ry="10" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: top, box-shadow;
+        transition-duration: .1s;
+
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .header__button:hover {
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+        top: 5px;
+        
+
+    }
+
+    .header__button h5 {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Bold";
+        font-style: normal;
+
+        line-height: 4.3;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+
+    section {
+
+        width: 100%;
+
+    }
+
+    .required__resources {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+    }
+
+    .reused__header {
+
+        position: relative;
+
+        width: 100%;
+        height: 65px;
+
+    }
+
+    .indoor__unit {
+
+        position: relative;
+
+        width: 90%;
+        height: 100%;
+
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .reused__header p {
+
+        position: relative;
+
+        display: inline-block;
+
+        word-break: break-word;
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-Black";
+        font-style: normal;
+
+        color: #000000;
+
+        line-height: 50px;
+
+    }
+
+    .reused__header span {
+
+        position: relative;
+
+    }
+
+    .reused__header span::after {
+
+        position: absolute;
+
+        content: '';
+
+        top: 50px;
+        left: 2px;
+
+        width: 60px;
+        height: 5px;
+
+        background-color: #6C16A1;
+
+    }
+
+    .reused__header:last-child span {
+
+        position: relative;
+
+    }
+
+    .reused__header:last-child span::after {
+
+        position: absolute;
+
+        content: '';
+
+        top: 50px;
+        left: -10px;
+
+        width: 100px;
+        height: 5px;
+
+        background-color: #6C16A1;
+
+    }
+
+    .first__paragraph {
+
+        position: relative;
+
+        width: 90%;
+
+        margin-top: 140px;
+
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .first__paragraph h5 {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Light";
+        font-weight: lighter;
+        font-style: normal;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+        color: #000000;
+
+    }
+
+    .first__paragraph h5 span {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 300;
+        font-style: normal;
+
+        color: #000000;
+
+    }
+
+    .second__paragraph {
+
+        position: relative;
+
+        width: 90%;
+
+        margin-top: 50px;
+
+        text-align: center;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .second__paragraph h5 {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Light";
+        font-weight: lighter;
+        font-style: normal;
+
+        line-height: 40px;
+
+        letter-spacing: 0.04em;
+
+        color: #000000;
+
+    }
+
+    .second__paragraph h5 span {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 300;
+        font-style: normal;
+
+        color: #000000;
+
+    }
+
+    .benefit__buyer {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 30px;
+
+    }
+
+    .upper__subblock {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-bottom: 50px;
+
+    }
+
+    .lower__subblock {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 115px;
+        padding-bottom: 80px;
+
+        background: linear-gradient(180deg, #33164E 0%, #561A8D 100%);
+
+    }
+
+    .array__element {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .image__element {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 10px;
+        padding-bottom: 30px;
+
+    }
+
+    .image__element img {
+
+        position: relative;
+
+        display: block;
+
+        width: 140px;
+        height: 140px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .element__text {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        text-align: center;
+
+        padding-top: 10%;
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 10%;
+
+    }
+
+    .element__text h5 {
+
+        position: relative;
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-Medium";
+        font-weight: 500;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 30px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .test__purchase {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 45px;
+        padding-bottom: 100px;
+
+    }
+
+    .reused__subtitle {
+
+        position: relative;
+
+        width: 90%;
+
+        text-align: center;
+
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .reused__subtitle h5 {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-ExtraLight";
+        font-weight: lighter;
+        font-style: normal;
+
+        color: #000000;
+
+        line-height: 35px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .none {
+        display: none !important;
+    }
+
+    .test_purchase_dies {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 25px;
+
+    }
+
+    .flex__unique {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    .test_purchase_bar {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 90%;
+
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+
+        padding-top: 68px;
+        padding-bottom: 80px;
+
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .test_purchase_bar:first-child {
+
+        margin-top: 0px;
+        
+    }
+
+    .test__price {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+    }
+
+    .test__price h1 {
+
+        font-size: 64px;
+        font-family: "MontserratAlternates-Black";
+        font-weight: 900;
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 50%, #F7E6BD 80% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .text_under_price {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        margin-top: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 42px;
+
+    }
+
+    .text_under_price h3 {
+
+        font-size: 28px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #555555;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+    }
+
+    .button_ordering_die {
+
+        width: 100%;
+
+    }
+
+    .frame_enclosing_button {
+
+        position: relative;
+        
+        width: 102%;
+        height: 100px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="300" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.05"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23F5F88C" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:94px;width:calc( 100% - 1%)" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: -1%;
+        margin-right: auto;
+
+    }
+
+    .active_frame_enclosing_button {
+
+        position: relative;
+
+        box-sizing: border-box;
+        
+        width: 104%;
+        height: 100px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="300" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.05"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:94px;width:calc( 100% - 2%)" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: -5px;
+        margin-right: auto;
+
+        /* padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px; */
+
+    }
+
+    .active_order_button_block {
+
+        position: relative;
+
+        top: 5px;
+        left: 5px;
+
+        width: calc( 100% - 10px );
+        height: calc( 100% - 10px );
+
+        border-radius: 10px;
+
+        background: linear-gradient( 90deg, #9E00FF, #F26EFF, #FDFF8B );
+
+    }
+
+    .order_button_block:hover {
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+
+    }
+
+    .order_button_block__h3 {
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .active_button_block {
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        line-height: 2.8;
+
+        color: #1B1044;
+
+    }
+
+    .button_ordering_die__unique {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 48px;
+
+    }
+
+    .order_button_block__unique {
+
+        position: relative;
+        
+        width: 104%;
+        height: 100px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="300" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23F5F88C" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:94px;width:calc( 100% - 1%)" rx="13" ry="13" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: margin-top, box-shadow;
+        transition-duration: .2s;
+
+        margin-left: -2%;
+        margin-right: auto;
+
+    }
+
+    .order_button_block__unique:hover {
+
+        margin-top: 5px;
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+
+    }
+
+    .order_button_block__unique h3 {
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .ordering_links {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 0px;
+        margin-bottom: 100px;
+        
+    }
+
+    .link_purchase_dies {
+
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        margin-top: 140px;
+
+    }
+
+    .link_purchase_bar {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 90%;
+
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+
+        padding-top: 33px;
+        padding-bottom: 100px;
+
+        margin-top: 58px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .link_purchase_bar:first-child {
+
+        margin-top: 0px;
+        
+    }
+
+    .link__price {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        margin-bottom: 40px;
+
+    }
+
+    .link__price h1 {
+
+        font-size: 64px;
+        font-family: "MontserratAlternates-Black";
+        font-weight: 900;
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 50%, #F7E6BD 80% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    footer {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-top: 50px;
+
+    }
+
+    .top_part_faq {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        padding-bottom: 80px;
+
+    }
+
+    .lower_part_faq {
+
+        position: relative;
+
+        box-sizing: border-box;
+
+        width: 100%;
+
+        background: linear-gradient(180deg, #33164E 0%, #561A8D 100%);
+
+        padding-top: 20px;
+        padding-bottom: 40px;
+
+    }
+
+    .list__questions {
+
+        position: relative;
+
+        width: 90%;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+
+    }
+
+    .question {
+
+        position: relative;
+
+        width: 100%;
+        height: 76px;
+
+        margin-bottom: 160px;
+
+    }
+
+    .question h5 {
+
+        display: block;
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: 400;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 50px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .underscore__question {
+
+        position: relative;
+
+        width: 60px;
+        height: 5px;
+
+        background: #CE2CF5;
+
+        margin-top: 20px;
+
+    }
+
+    .support {
+
+        position: relative;
+
+        width: 100%;
+        height: 100%;
+
+        margin-top: 35px;
+
+    }
+
+    .support__header {
+
+        position: relative;
+
+        width: 100%;
+
+        text-align: center;
+
+        line-height: 50px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .support__header h5 {
+
+        font-size: 20px;
+        font-family: "MontserratAlternates-ExtraBold";
+        font-weight: 800;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+    }
+
+    .list__links {
+
+        position: relative;
+
+        display: flex;
+
+        width: 70%;
+
+        flex-direction: column;
+
+        margin-top: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        
+    }
+
+    .link__block {
+
+        position: relative;
+
+        text-decoration: none;
+
+    }
+
+    .link__block img {
+
+        display: block;
+
+        width: 70px;
+        height: 70px;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 22px;
+
+    }
+
+    .link__block h5 {
+
+        width: 100%;
+
+        font-size: 20px;
+        font-family: "MontserratAlternates-Bold";
+        font-style: normal;
+
+        color: #E1E1E1;
+
+        line-height: 2.5;
+        letter-spacing: 0.04em;
+        
+    }
+
+
+    .order__popup {
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100vw;
+        height: 100vh;
+
+        background: #FFFFFF;
+
+    }
+
+    .popup__table {
+
+        position: relative;
+
+        display: table-cell;
+
+        width: 100vw;
+        height: 100vh;
+
+        vertical-align: middle;
+
+    }
+
+    .order_popup_content {
+
+        box-sizing: border-box;
+
+        position: relative;
+
+        width: 100vw;
+        height: 100vh;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 100px;
+
+        background: linear-gradient(180deg, #4A1977 0%, #7527BD 100%);
+
+    }
+
+    .type_of_order {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .type_of_order h1 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+        text-align: center;
+
+    }
+
+    .cost__block {
+
+        position: relative;
+
+        display: flex;
+
+        width: 80%;
+
+        margin-top: 12px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .cost__block h2 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Regular";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+        letter-spacing: 0.04em;
+
+        text-align: center;
+
+    }
+
+    .cost__block h1 {
+
+        position: relative;
+
+        font-size: 30px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 25%, #F7E6BD 55% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+        margin-top: 20px;
+        margin-left: 25px;
+
+    }
+
+    .dividing__line {
+
+        position: relative;
+
+        width: 190px;
+        height: 3px;
+
+        margin-top: 25px;
+
+        background: #CE2CF5;
+
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .user__data {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 35px;
+
+    }
+
+    .user__data label {
+
+        position: relative;
+
+        display: block;
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+        
+        text-align: center;
+
+    }
+
+    .user__data input {
+
+        position: relative;
+
+        display: block;
+
+        width: 100%;
+        height: 60px;
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        background: rgba(0, 0, 0, 0);
+
+        border: 3px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        padding-left: 25px;
+
+        border: 3px solid #FFFFFF;
+
+    }
+
+    .user__data input:placeholder-shown {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Regular";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+    }
+    
+    .continue_button_block {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 80px;
+
+    }
+
+    .continue__button {
+
+        position: relative;
+        
+        width: 100%;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:75px;width:calc( 100% - 2% )" rx="10" ry="10" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: top, box-shadow;
+        transition-duration: .1s;
+
+    }
+
+    .continue__button:hover {
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+        top: 5px;
+        
+
+    }
+
+    .continue__button h3 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Bold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.2;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .payment_method_popup {
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        display: none;
+
+        width: 100vw;
+        height: 100vh;
+
+        background: #FFFFFF;
+
+    }
+
+    .popup__name {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .popup__name h1 {
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .account__name {
+
+        position: relative;
+
+        width: 100%;
+
+    }
+
+    .account__name h5 {
+
+        font-size: 18px;
+        font-family: "MontserratAlternates-Regular";
+        font-weight: lighter;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .sum__block {
+
+        position: relative;
+
+        display: flex;
+
+        margin-top: -25px;
+
+    }
+
+    .sum__block h4 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Medium";
+        font-weight: lighter;
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 85px;
+
+        letter-spacing: 0.04em;
+        
+    }
+
+    .sum__block h1 {
+
+        font-size: 36px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        background: linear-gradient(#BE1EF9 10% , #CE2CF5 25%, #F7E6BD 55% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        line-height: 40px;
+        letter-spacing: 0.04em;
+
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .form_payment_method {
+
+        width: 100%;
+
+        margin-top: 45px;
+
+    }
+
+    .form_payment_method label {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-SemiBold";
+        font-style: normal;
+
+        color: #FFFFFF;
+
+        line-height: 40px;
+
+        letter-spacing: 0.04em;
+
+    }
+
+    .payment_method_field {
+
+        position: relative;
+
+        display: block;
+
+        width: 570px;
+        height: 60px;
+
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+        background: rgba(0, 0, 0, 0);
+
+        border: 3px solid #FFFFFF;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        padding-left: 25px;
+
+        border: 3px solid #FFFFFF;
+
+    }
+
+    .payment_button_backing {
+
+        position: relative;
+
+        width: 100%;
+
+        margin-top: 40px;
+
+    }
+
+    .payment__button {
+
+        position: relative;
+        
+        width: 430px;
+        height: 80px;
+
+        z-index:0;
+
+        border-radius: 15px;
+
+        text-align: center;
+
+        cursor: pointer;
+
+        box-shadow: 0px 5px 10px rgba(255, 255, 255, 0.2);
+
+        background:url('data:image/svg+xml;utf8,<svg   xmlns="http://www.w3.org/2000/svg" ><defs><linearGradient id="Gradient" x1="0" x2="400" y1="0" y2="0" gradientUnits="userSpaceOnUse"> <stop stop-color="%239E00FF" offset="0.1"/> <stop stop-color="%23F26EFF" offset="0.3"/> <stop stop-color="%23F97EFF" offset="0.7"/> <stop stop-color="%23FEFFC4" offset="1"/> </linearGradient></defs><rect x="3" y="3" width="100%" height="100%" style="height:75px;width:425px" rx="10" ry="10" stroke-width="5" fill="transparent" stroke="url(%23Gradient)"/></svg>');
+
+        transition-property: top, box-shadow;
+        transition-duration: .1s;
+
+    }
+
+    .payment__button:hover {
+
+        box-shadow: 0px 5px 1px rgba(255, 255, 255, 0);
+        top: 5px;
+        
+
+    }
+
+    .payment__button h3 {
+
+        font-size: 24px;
+        font-family: "MontserratAlternates-Bold";
+        font-weight: 400;
+        font-style: normal;
+
+        line-height: 3.3;
+
+        background-image: linear-gradient(90deg, #9E00FF 22%, #F26EFF 50%, #FEFFC4 99% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .first_decorative_triangle {
+
+        position: absolute;
+
+        top: 740px;
+        right: 16px;
+
+        transform: rotate(-40deg);
+
+    }
+
+    .second_decorative_triangle {
+
+        display: none;
+
+        position: absolute;
+
+        top: 496px;
+        right: 16px;
+
+    }
+
+    .third_decorative_triangle {
+
+        position: absolute;
+
+        top: 16px;
+        left: 26px;
+
+        transform: rotate(-44deg);
+
+    }
+
+    .fourth_decorative_triangle {
+
+        display: none;
+
+        position: absolute;
+
+        top: 745px;
+        left: 250px;
+
+        transform: rotate(-44deg);
+
+    }
+
+    .fifth_decorative_triangle {
+
+        display: none;
+
+        position: absolute;
+
+        top: -50px;
+        right: 86px;
+
+    }
+
+    .sixth_decorative_triangle {
+
+        position: absolute;
+
+        top: -50px;
+        right: 30px;
+
+        transform: rotate(-45deg);
+
+    }
+
+    .seventh_decorative_triangle {
+
+        position: absolute;
+
+        width: 60px;
+        height: 60px;
+
+        top: 1300px;
+        right: 60px;
+
+    }
+
+    .eighth_decorative_triangle {
+
+        position: absolute;
+
+        width: 30px;
+        height: 30px;
+
+        top: 1325px;
+        right: 25px;
+
+        transform: rotate(35deg);
+
+    }
+
+
+}
